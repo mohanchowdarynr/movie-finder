@@ -1,3 +1,4 @@
+import { Container, Grid } from "@material-ui/core";
 import axios from "axios";
 import { useState,useEffect } from "react";
 import MovieList from "./MovieList";
@@ -16,26 +17,30 @@ const Movies = () => {
     //     );
     //     setCredits(data.cast);
     //   };    
-    
+    async function fetchData() {
+        const  request  = await axios.get(discover);
+        console.log(request.data);
+        setMovies(request.data);
+    }
+
     useEffect(() => {
-        async function fetchData() {
-            const  request  = await axios.get(discover);
-            console.log(request);
-            setMovies(request.data);
-        }
         fetchData();
     }, [])
 
    
     // console.log(data);
     return (
-        <div className="movies">
+      <Container>
+        <Grid container>
             {
                movies.length>0 && movies.map((movie) =>
-                    <MovieList {...movie} key={movie.id}/>
+                <Grid item>
+                    <MovieList movie={movie}/>
+                </Grid>
                 )
             }
-        </div>
+        </Grid>
+      </Container>
     )
 }
 

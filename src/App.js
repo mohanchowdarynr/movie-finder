@@ -1,15 +1,13 @@
 import React from "react";
 import './App.css';
-import DownNavbar from './components/DownNavbar';
-import Movies from "./components/Movies";
-import Navbar from "./components/Navbar";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className="app">
-        <Navbar />
-        <Movies />
-    </div>
+    <>
+        <Layout />
+        
+    </>
   );
 }
 
