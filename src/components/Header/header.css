@@ -1,0 +1,10 @@
+.header{
+    background-color: brown;
+}
+.header h1{
+    text-align: center;
+    padding: 10px;
+} 
+@media (min-width:700px) {
+    .header{padding: 25px;}
+}
