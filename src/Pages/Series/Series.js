@@ -30,7 +30,7 @@ const Series = () => {
 
   return (
     <div>
-      <span className="pageTitle">Discover Series</span>
+      <span className="pageTitle" style={{color:"black",fontSize:"30px",verticalAlign:"middle"}}>Discover Series</span>
       <Genres
         type="tv"
         selectedGenres={selectedGenres}

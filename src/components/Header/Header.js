@@ -1,12 +1,11 @@
-import React from 'react'
-import './header.css'
+import "./header.css";
 
 const Header = () => {
-    return (
-        <div className="header">
-            <h1>movie Zone</h1>
-        </div>
-    )
-}
+  return (
+    <span onClick={() => window.scroll(0, 0)} className="header">
+      Movie Zone
+    </span>
+  );
+};
 
-export default Header
+export default Header;

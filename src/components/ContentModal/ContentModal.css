@@ -42,16 +42,17 @@
 }
 
 .ContentModal__title {
-  height: 12%;
-  font-size: 5vw;
+  /* height: 12%; */
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .ContentModal__description {
+  font-size: 14px;
   display: flex;
-  height: 40%;
+  height: auto;
   overflow-y: scroll;
   padding: 15px;
   border-radius: 20px;
