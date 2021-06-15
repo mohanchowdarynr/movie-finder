@@ -24,7 +24,7 @@ const Trending = () => {
 
   return (
     <div>
-      <span className="pageTitle" style={{color:"black",fontSize:"30px"}}>Trending Today</span>
+      <span className="pageTitle">Trending Today</span>
       <div className="trending">
         {content &&
           content.map((c) => (
