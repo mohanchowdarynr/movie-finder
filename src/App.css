@@ -6,7 +6,7 @@
     min-height: 100vh;
     background-color: #B91C1C;
     color: white;
-    padding-top: 130px;
+    padding-top: 90px;
     padding-bottom: 70px;
   }
   @media (max-width: 700px) {
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 4px;
     border-radius: 50px;
     color: white;
@@ -28,6 +28,6 @@
   
   @media (max-width: 1000px) {
     .pageTitle {
-      font-size: 6.4vw;
+      font-size: 2vw;
     }
   }
